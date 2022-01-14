@@ -169,7 +169,7 @@ instanceDetails=$(aws ec2 run-instances \
 --profile $profile \
 --user-data file://create-lamp-instance-userdata-v2.txt )
 
-#if the create instance command failed, exit this script
+#if the create instance command failed, then exit this script
 if [[ "$?" -ne "0" ]]; then
   exit 1
 fi
