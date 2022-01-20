@@ -144,6 +144,7 @@ aws ec2 authorize-security-group-ingress \
 --cidr 0.0.0.0/0 \
 --region $region \
 --profile $profile
+#Opening ports
 
 echo "Opening port 80 in the new security group"
 aws ec2 authorize-security-group-ingress \
